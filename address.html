@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;	
+}
+nav{
+	background:purple;
+	height: 100px;
+	width: 100%;
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 30px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color:grey;
+	font-size: 17px;
+	padding: 15px 7px;
+	border-radius: 3px;
+	text-transform: none;
+}
+a.active,a:hover{
+	background:none;
+	text-decoration: none; 
+	color: white;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right:40px; 
+	cursor: pointer;
+	display:flex;	
+}
+#check{
+	display: none;
+}
+.wrapper{
+	display: flex;
+}
+address{
+    text-align: center;
+    font-style: italic;
+    font-size: 45px;
+    margin: 180px;
+}
+footer {
+    background-color:purple;
+    color:grey;
+    clear:both;
+    text-align:center;
+    padding:5px;     
+}
+
+@media(max-width: 952px){
+	.wapper{
+		display: flex;
+	}
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+		display: flex;
+	}
+	nav ul li a{
+		font-size: 10px;
+		display: none;
+	}
+	address{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 170px;
+    margin-left: 90px;
+}
+}
+@media(max-width: 858px){
+	.checkbtn{
+		display: none;
+	
+	}
+	#check:checked ~ul{
+		left: 0px;
+	}
+	.btn{
+    padding: 3px 5px; 
+    width: 40px; 
+    display: flex;
+  }
+
+}
+
+       </style>
+            </head>
+            <body>
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>	
+                    </label>
+                    <label class="logo"><a href="menu.html"><span style="color: black">P</span><span style="color: tomato"><b>.folio</b></span></a></label>
+                    <i class="fas fa-bars"></i>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                    <li><a class="active" href="address.html">Contact</a></li>
+                    
+                    
+                </ul>
+                </nav>
+                <div class="wrapper"></div>
+                  <address>
+                   Contact Information:<br>No:+234 817 028 0613 <br>
+                    email:infoaspilos<br>foundation.com<br>
+                </address>
+                <footer>
+<div style="background-color:purple; color:grey;">
+    Copyright@fauziyyam.com
+</footer>
+
+            </body>
+            </html>

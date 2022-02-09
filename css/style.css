@@ -1,0 +1,136 @@
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;  
+}
+nav{
+  background:purple;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:grey;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: none;
+}
+a.active,a:hover{
+  background:none;
+  text-decoration: none; 
+  color: white;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right:40px; 
+  cursor: pointer;
+  display: none;  
+}
+#check{
+  display:none;
+}
+body, html{
+  height: 110%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0.5, 0, 0.5), rgba(0, 0.5, 0, 0.5)), url("../img/aspilos logo.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align:left;
+  padding-left: 55px;
+  padding-top: 150px;
+ width: 90vw;
+ justify-content: center;
+ align-items: center;
+  color: white;
+}
+.hero-text h1{
+  display:block;
+  font-size: 45px;
+  padding-left: : 15px;
+}
+.hero-text p{
+  display: block;
+  font-size:15px;
+  padding-left: : 15px;
+}
+footer {
+    background-color:purple;
+    color:grey;
+    clear:both;
+    text-align:center;
+    padding:5px;     
+}
+
+.coloumn{
+  display: flex;
+  text-align: justify;
+  margin-left: 20px;
+}
+.wrapper{
+    display: flex;
+}
+
+@media(max-width: 952px){
+  label.logo{
+    display:flex;
+    max-width: 50px;
+  }
+  nav ul li a{
+  display:none;
+  }
+
+}
+@media(max-width: 858px){
+  .checkbtn{
+    display:none;
+  }
+  .container{
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .btn{
+    padding: 3px 5px; 
+    width: 40px; 
+    display: flex;
+  }
+ 

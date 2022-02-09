@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;  
+}
+nav{
+  background:purple;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:grey;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: none;
+}
+a.active,a:hover{
+  background:none;
+  text-decoration: none; 
+  color: white;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right:40px; 
+  cursor: pointer;
+  display: flex;  
+}
+#check{
+  display: none;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+form {
+  border: 3px solid #f1f1f1;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 330px 0px 200px;
+  background-color: purple;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.container {
+  padding: 16px;
+  max-width: 55%;
+  margin-top: 0;
+  margin-left: 17%;
+  background-color: purple;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+footer {
+    background-color:purple;
+    color:grey;
+    clear:both;
+    text-align:center;
+    padding:5px;      
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+@media(max-width: 952px){
+  label.logo{
+    display: flex;
+  }
+  nav ul li a{
+  display: none;
+  }
+}
+@media(max-width: 858px){
+  .checkbtn{
+    display:flex;
+  }
+  .container{
+    margin: 5px;
+    padding: 15px;
+  }
+ .btn{
+    padding: 3px 5px; 
+    width: 40px; 
+    display: flex;
+  }
+
+  .imgcontainer {
+  text-align: center;
+  margin: 10px 48px 0px 32px;
+  background-color: purple;
+}
+
+img.avatar {
+  width: 15%;
+  border-radius: 20%;
+  background-color:white;
+}
+
+.container {
+  padding: 13px;
+  max-width: 75%;
+  margin-top: 0;
+  margin-left: 10%;
+  background-color: purple;
+}
+
+}
+
+</style>
+</head>
+<body>
+  <nav>
+    <input type="text" name="menu" id="check">
+    <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i> 
+    </label>
+    <label class="logo"><a href="menu.html"><span style="color: black">P</span><span style="color: tomato"><b>.folio</b></span></a></label>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Services.html">Service</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a  class="active" href="login.html">Log in</a></li>
+      <li><a href="address.html">Contact</a></li>
+      
+  </ul>
+  </nav>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <!-- <h2>Login Form</h2> -->
+    <img src="A.v.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    <h1 style="text-align: center;">Login Form</h1><br><br>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<footer>
+<div style="background-color:purple; color:grey;">
+    Copyright@fauziyyam.com
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<style>
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;  
+}
+nav{
+  background:purple;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:grey;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: none;
+}
+a.active,a:hover{
+  background:none;
+  text-decoration: none;
+  color: white; 
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right:40px; 
+  cursor: pointer;
+  display: flex;  
+}
+#check{
+  display: none;
+}
+footer {
+    background-color:purple;
+    color:grey;
+    clear:both;
+    text-align:center;
+    padding:5px;     
+}
+
+@media(max-width: 952px){
+  label.logo{
+    display: flex;
+  }
+  nav ul li a{
+  display:none;
+  }
+}
+@media(max-width: 858px){
+  .checkbtn{
+    display:flex;
+  }
+  .container{
+    margin: 20px;
+    padding: 15px;
+    max-width: 75%;
+  }
+  
+  .btn{
+    padding: 3px 5px; 
+    width: 40px; 
+    display: flex;
+  }
+</style>
+</head>
+<body>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i> 
+    </label>
+    <label class="logo"><a href="menu.html"><span style="color: black">P</span><span style="color: tomato"><b>.folio</b></span></a></label>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="About.html">About</a></li>
+      <li><a href="services.html">Service</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a  href="login.html">Log in</a></li>
+      <li><a  href="address.html">Contact</a></li>
+    
+    
+  </ul>
+  </nav><br><br>
+  <h1 style="text-align: center; font-size: 50px; color: purple;">About Us</h1>
+  <p style="text-align: center; font-size: 30px;">Aspilos Charity Foundation is a non-governmental, non-political and non-for-profit organization<br> delicated to improving the quality of human lives<br> whose services are rendered in Abocoders Minna.</p><br>
+  <p style="text-align: center; font-size: 30px">Working with others, in a spirit of generosity and mutual respect, <br>we want to help build a world where all people can lead free and dignified lives.</p><br><br>
+  <p style="text-align: left; font-size: 30px">Some issue Areas include:</p><br>
+  <p style="text-align: left; font-size: 30px;">1.Children & youth</p>
+  <p style="text-align: left; font-size: 30px;">2.Civic Engagement</p>
+  <p style="text-align: left; font-size: 30px;">3.Economic Development</p>
+  <p style="text-align: left; font-size: 30px;">4.Enterprenuership</p>
+  <p style="text-align: left; font-size: 30px;">5.Science & Technology</p>
+
+  <h1 style="text-align: center; font-size: 50px; color: tomato;">Location</h1>
+  <p style="text-align: center; font-size: 30px;">Suite C70, Efab Mall, Ahmadu<br> Bello Way, Abuja, None 900102,<br> Area 11,<br> Nigeria.</p>
+  <footer>
+<div style="background-color:purple; color:grey;">
+    Copyright@fauziyyam.com
+</footer>
+
+</body>
+</html>

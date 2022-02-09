@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<style>
+	body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;  
+}
+nav{
+  background:purple;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  display:block;
+  margin-right: 0px;
+  background-color: lightblue;
+}
+nav ul li{
+  display: block;
+  line-height: 100px;
+  text-align: center;
+}
+nav ul li a{
+  color:grey;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: none;
+}
+a.active,a:hover{
+  background:none;
+  text-decoration: none; 
+  color: white;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right:40px; 
+  cursor: pointer;
+  display: flex;  
+}
+#check{
+  display: none;
+}
+
+		@media(max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		/*padding-left: 50px;*/
+		display: flex;
+	}
+	nav ul li a{
+		font-size: 10px;
+		display:flex;
+	}
+}
+@media(max-width: 952px){
+	.checkbtn{
+		display: none;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 120vh;
+		background:lightblue;
+		text-align: center;
+		transition: all.5s;
+	}
+	nav ul li{
+		display:block;
+		margin: 28px 120px;
+		line-height: 27px;
+	}
+	nav ul li a{
+		font-size: 17px;
+	}
+	a:hover, a.active{
+		background: none;
+		color:white;
+	}
+	#check:checked ~ul{
+		left: 0px;
+	}
+	.btn{
+    padding: 3px 5px; 
+    width: 40px; 
+    display: flex;
+  }
+
+}
+</style>
+	</style>
+</head>
+<body>
+ <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i> 
+    </label>
+    <label class="logo"><span style="color: black">P</span><span style="color: tomato"><b>.folio</b></span></label>
+  </nav>
+  <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Services.html">Service</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Log in</a></li>
+      <li><a href="address.html">Contact</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>
